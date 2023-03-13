@@ -57,14 +57,13 @@ header {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     color: black;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;   
 } 
 
 nav a:hover {
     color: #579BB1;
-    font-size: 22px;
     transition: 400ms;
 }
 
@@ -96,6 +95,10 @@ footer p {
     height: 800px;
 }
 
+.descripcion-empresa  {
+    margin: 20px 300px;
+}
+
 .descripcion-empresa h1 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -104,10 +107,11 @@ footer p {
 }
 
 .empresa-barberist {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 25px 80px;
+    gap: 50px;
+
 }
 
 .informacion {
@@ -116,13 +120,9 @@ footer p {
     margin: auto;
 }
 
-.imagen-informacion {
-    display: flex;
-    justify-content: center;   
-}
-
 .imagen-informacion img {
-    width: 40%;
+    width: 300px;
+    height: 300ppx;
     border-radius: 5px;
     margin: 0 auto;
 }
@@ -133,7 +133,7 @@ footer p {
 }
 
 .imagen-diferenciales img {
-    width: 60%;
+    width: 400px;
     border-radius: 5px;
 }
 
@@ -161,11 +161,13 @@ h2 {
 .servicios {
     display: flex;
     justify-content: space-around;
+    margin: 100px 300px;
 }
 
 main {
     background: #fff;
 }
+
 main h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 23px;
@@ -185,7 +187,7 @@ main h1 {
 
 .lista-servicios:hover {
     border-color: blue;
-    background-color: rgb(218, 226, 211);
+    background-color: #faf5f5;
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -198,7 +200,37 @@ main h1 {
     font-weight: bold;
     font-size: 22px;
 }
+/* Productos */
+.section-productos {
+    margin: 20px 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
+}
+.productos {
+    margin: 20px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    border: 1px solid rgb(231, 225, 225);
+    border-radius: 50px;
+    box-shadow: 10px 5px 20px 3px #555;
+    text-align: center;
+    box-sizing: border-box;  
+}
+
+.productos img {
+    width: 180px;
+    height: 240px;
+}
+
+.productos :last-child {
+    font-weight: bolder;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
 /* contactanos */
 
 .contactanos {
